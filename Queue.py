@@ -35,7 +35,7 @@ class Queue:
 #I didn't design this to support mass deletion. As a result it would be pendantic to delete
 #all of the elements as you would need to say where you would like to delete for each iteration.
     def dequeue(self):
-        ask = input("Are you dequeing from the tail(T) or the head (H )?").upper()
+        ask = input("Are you dequeing from the tail(T) or the head (H)?").upper()
         if ask=="H":
             self.queue.pop()
             self.n-=1

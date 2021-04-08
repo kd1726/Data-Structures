@@ -19,7 +19,11 @@ class DynamicList:
         self.array[self.n]=element
         self.n+=1
         return
-
+    def pop():
+        self.array[self.n]=None
+        self.n-=1
+        return display()
+        
     def _resize(self,new_size):
         new_arr = self._make_array(new_size)
         for i in range(self.n):

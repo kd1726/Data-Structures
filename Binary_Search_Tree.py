@@ -185,4 +185,4 @@ class BinarySearchTree:
             node = successor
 
             self._delete_node(successor)
-        return
+    return

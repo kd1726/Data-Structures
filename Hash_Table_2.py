@@ -101,6 +101,7 @@ class Hash:
         else:
             return "No result"
 
+#I have to adjust the delete function as when the rehas function is at play the key and the rehashed key do not have the same value. As a result it will not be able to delete since it doesn't know the values hash key.
     def delete(self,key):
         hashkey = self._hash_key(key)
         bucket = self.hash_table[hashkey]
